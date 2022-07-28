@@ -12,66 +12,41 @@ html{
 }
 
 body {
-   font-family: inter, Arial, Arial, Helvetica, sans-serif;
-   font-size: 2.4rem;
-   line-height: 1.5;  
-   color: var(--color-body);
+    font-family: inter, Arial, Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;  
+    color: var(--color-body);
+ }
+/* Badges */
+
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
 }
-h1,h2,h3 {
-    color: var(--color-headings);
-    margin-bottom: 1rem;
+
+.badge--primary {
+    background: var(--color-primary);
+    color: #fff;
 }
-h1 {
-    /* 1 x font size of the html element */
-    font-size: 7rem;
+
+.badge--secondary {
+    background: var(--color-secondary);
+    color:#fff ;
 }
-h2{
-    font-size: 4rem;
-}
-h3{
-    font-size: 3rem;
-}
-p { 
-   margin-top: 0;
+
+.badge--small {
+    font-size: 1.6rem;
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        font-size: 1.8rem;
-    }
-    h1 {
-         font-size: 8rem;
-    }
-    h2 {
-        font-size: 4rem
-    }
-    h2{
-        font-size: 2.4rem ;   
-    }
-}
-/* Links */
-a {
-    text-decoration: none;
-}
-.link-arrow {
-    color: var(--color-accent);
-    text-transform: uppercase;
-    font-size: 2rem;font-weight: bold;
-
-}
-
-.link-arrow::after {
-    content: '-->';
-    margin-left: 5px;
-    transition: margin 0.15s;
-}
-
-.link-arrow:hover::after {
-    margin-left:10px;
-}
-
-@media screen and (min-width: 1024px) {
-    .link-arrow {
+    .badge{
         font-size: 1.5rem;
+    }
+
+    .badge--small {
+        font-size: 1.2rem;
     }
 }

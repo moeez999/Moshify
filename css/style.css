@@ -17,36 +17,24 @@ body {
     line-height: 1.5;  
     color: var(--color-body);
  }
-/* Badges */
 
-.badge {
-    border-radius: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
+ /* Lists */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
 }
 
-.badge--primary {
-    background: var(--color-primary);
-    color: #fff;
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
 }
 
-.badge--secondary {
-    background: var(--color-secondary);
-    color:#fff ;
+.list--tick {
+    list-style-image: url(./../../Images/tick.svg);
+    padding-left: 3rem;
 }
-
-.badge--small {
-    font-size: 1.6rem;
-}
-
-@media screen and (min-width: 1024px) {
-    .badge{
-        font-size: 1.5rem;
-    }
-
-    .badge--small {
-        font-size: 1.2rem;
-    }
+.list--tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
 }

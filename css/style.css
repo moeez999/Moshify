@@ -18,23 +18,22 @@ body {
     color: var(--color-body);
  }
 
- /* Lists */
-.list {
-    list-style: none;
-    padding-left: 0;
-    color: var(--color-headings);
+/* Icon */
+.icon {
+    width: 40px;
+    height: 40px;
 }
 
-.list--inline .list__item {
-    display: inline-block;
-    margin-right: 2rem;
+.icon--primary {
+    fill: var(--color-primary)
 }
 
-.list--tick {
-    list-style-image: url(./../../Images/tick.svg);
-    padding-left: 3rem;
-}
-.list--tick .list__item {
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
+.icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
